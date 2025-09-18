@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="userGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lambdaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bedrockGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9C27B0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6A1B9A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="claudeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E91E63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#AD1457;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="dropshadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2d5a27">
+    🤖 PNW Hiking Chatbot - Bedrock AI Flow
+  </text>
+  
+  <!-- Step 1: User Input -->
+  <g id="step1">
+    <rect x="50" y="100" width="200" height="80" rx="10" fill="url(#userGradient)" filter="url(#dropshadow)"/>
+    <text x="150" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">👤 User Question</text>
+    <text x="150" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">"Best trails near</text>
+    <text x="150" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Mount Rainier?"</text>
+  </g>
+  
+  <!-- Step 2: Lambda Function -->
+  <g id="step2">
+    <rect x="300" y="100" width="200" height="80" rx="10" fill="url(#lambdaGradient)" filter="url(#dropshadow)"/>
+    <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">⚡ Lambda Function</text>
+    <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">chat-handler.js</text>
+    <text x="400" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Process Request</text>
+  </g>
+  
+  <!-- Step 3: Prompt Engineering -->
+  <g id="step3">
+    <rect x="550" y="100" width="200" height="80" rx="10" fill="#607D8B" filter="url(#dropshadow)"/>
+    <text x="650" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">📝 Prompt Builder</text>
+    <text x="650" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Add PNW Context</text>
+    <text x="650" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Domain Expertise</text>
+  </g>
+  
+  <!-- Step 4: Bedrock API -->
+  <g id="step4">
+    <rect x="800" y="100" width="200" height="80" rx="10" fill="url(#bedrockGradient)" filter="url(#dropshadow)"/>
+    <text x="900" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">🏗️ Amazon Bedrock</text>
+    <text x="900" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Managed AI Service</text>
+    <text x="900" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">API Gateway</text>
+  </g>
+  
+  <!-- Step 5: Claude Model -->
+  <g id="step5">
+    <rect x="800" y="250" width="200" height="80" rx="10" fill="url(#claudeGradient)" filter="url(#dropshadow)"/>
+    <text x="900" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">🧠 Claude 3.5 Sonnet</text>
+    <text x="900" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Foundation Model</text>
+    <text x="900" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Generate Response</text>
+  </g>
+  
+  <!-- Step 6: Response Processing -->
+  <g id="step6">
+    <rect x="550" y="250" width="200" height="80" rx="10" fill="url(#lambdaGradient)" filter="url(#dropshadow)"/>
+    <text x="650" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">🔄 Process Response</text>
+    <text x="650" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Extract AI Text</text>
+    <text x="650" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Format JSON</text>
+  </g>
+  
+  <!-- Step 7: API Response -->
+  <g id="step7">
+    <rect x="300" y="250" width="200" height="80" rx="10" fill="#4CAF50" filter="url(#dropshadow)"/>
+    <text x="400" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">📤 API Response</text>
+    <text x="400" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Return to Frontend</text>
+    <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">HTTP 200 OK</text>
+  </g>
+  
+  <!-- Step 8: User Sees Result -->
+  <g id="step8">
+    <rect x="50" y="250" width="200" height="80" rx="10" fill="url(#userGradient)" filter="url(#dropshadow)"/>
+    <text x="150" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">✨ Chat Updated</text>
+    <text x="150" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">AI Hiking Advice</text>
+    <text x="150" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Displayed to User</text>
+  </g>
+  
+  <!-- Flow Arrows - Top Row (Left to Right) -->
+  <line x1="250" y1="140" x2="300" y2="140" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="275" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">1</text>
+  
+  <line x1="500" y1="140" x2="550" y2="140" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="525" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">2</text>
+  
+  <line x1="750" y1="140" x2="800" y2="140" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="775" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">3</text>
+  
+  <!-- Down Arrow (Bedrock to Claude) -->
+  <line x1="900" y1="180" x2="900" y2="250" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="920" y="215" font-family="Arial, sans-serif" font-size="9" fill="#333">4</text>
+  
+  <!-- Bottom Row (Right to Left) -->
+  <line x1="800" y1="290" x2="750" y2="290" stroke="#6A1B9A" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="775" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">5</text>
+  
+  <line x1="550" y1="290" x2="500" y2="290" stroke="#6A1B9A" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="525" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6A1B9A">6</text>
+  
+  <line x1="300" y1="290" x2="250" y2="290" stroke="#4CAF50" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="275" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4CAF50">7</text>
+  
+  <!-- Sample Response Box -->
+  <g id="sample-response">
+    <rect x="50" y="400" width="1100" height="120" rx="10" fill="#e8f5e8" stroke="#4CAF50" stroke-width="2"/>
+    <text x="600" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">💬 Sample AI Response</text>
+    
+    <text x="80" y="455" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">User Question:</text>
+    <text x="200" y="455" font-family="Arial, sans-serif" font-size="12" fill="#333">"What are the best hiking trails near Mount Rainier?"</text>
+    
+    <text x="80" y="480" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">AI Response:</text>
+    <text x="80" y="500" font-family="Arial, sans-serif" font-size="11" fill="#333">"Great question! For Mount Rainier area, I recommend: Skyline Trail for stunning alpine meadows (moderate difficulty),</text>
+    <text x="80" y="515" font-family="Arial, sans-serif" font-size="11" fill="white">Tolmie Peak for panoramic views (easy-moderate), and Comet Falls for a beautiful waterfall hike (moderate). Best time</text>
+    <text x="80" y="515" font-family="Arial, sans-serif" font-size="11" fill="#333">to visit is July-September when trails are snow-free. Don't forget your National Park pass and plenty of water!"</text>
+  </g>
+  
+  <!-- Flow Description -->
+  <g id="flow-description">
+    <rect x="50" y="560" width="1100" height="100" rx="10" fill="#f0f8ff" stroke="#4682B4" stroke-width="2"/>
+    <text x="600" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4682B4">🔄 Complete Flow Summary</text>
+    
+    <text x="80" y="610" font-family="Arial, sans-serif" font-size="12" fill="#333">1. User types hiking question → 2. Lambda processes request → 3. Prompt enhanced with PNW context →</text>
+    <text x="80" y="625" font-family="Arial, sans-serif" font-size="12" fill="#333">4. Bedrock invokes Claude 3.5 Sonnet → 5. AI generates hiking advice → 6. Response processed →</text>
+    <text x="80" y="640" font-family="Arial, sans-serif" font-size="12" fill="#333">7. JSON returned to frontend → User sees personalized Pacific Northwest hiking recommendations!</text>
+  </g>
+</svg>
