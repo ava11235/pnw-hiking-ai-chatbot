@@ -1,5 +1,6 @@
 # 🌲 PNW Hiking Chatbot
 
+
 An AI-powered hiking assistant for Pacific Northwest trails, built with AWS serverless architecture and powered by Claude 3.5 Sonnet.
 
 ![Architecture Diagram](architecture-diagram.svg)
@@ -13,14 +14,6 @@ An AI-powered hiking assistant for Pacific Northwest trails, built with AWS serv
 - 🏔️ **PNW Expertise**: Specialized knowledge of Washington and Oregon trails
 - 📱 **Responsive Design**: Works perfectly on desktop and mobile
 - 🔒 **Enterprise Security**: Private S3, IAM roles, and secure API endpoints
-
-## 🚀 Live Demo
-
-Try the chatbot with these sample questions:
-- "What are the best hiking trails near Seattle?"
-- "What gear do I need for rainy weather hiking?"
-- "When is the best time to hike Mount Rainier?"
-- "Tell me about hiking safety in bear country"
 
 ## 🏗️ Architecture
 
@@ -83,6 +76,13 @@ pnw-hiking-chatbot/
 └── 🚀 deploy-website.bat
 ```
 
+
+<img width="605" height="957" alt="image" src="https://github.com/user-attachments/assets/edfe5799-812b-4ba5-898b-d60db75ea439" />
+
+<img width="901" height="922" alt="image" src="https://github.com/user-attachments/assets/a3f50a37-5e71-4839-9fdb-cc7b9de96bc8" />
+
+
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -132,75 +132,3 @@ The chatbot provides expert advice on:
 - **🐻 Safety Information**: Wildlife awareness and emergency preparedness
 - **📍 Local Knowledge**: Permits, parking, and trail conditions
 
-## 🔧 Configuration
-
-### Environment Variables
-```bash
-# AWS Configuration
-AWS_REGION=us-west-2
-AWS_ACCOUNT_ID=your-account-id
-
-# Frontend Configuration
-REACT_APP_AWS_REGION=us-west-2
-REACT_APP_USER_POOL_ID=your-user-pool-id
-REACT_APP_USER_POOL_CLIENT_ID=your-client-id
-REACT_APP_API_URL=your-api-gateway-url
-```
-
-### AWS Services Required
-- ✅ Amazon Bedrock (Claude 3.5 Sonnet access)
-- ✅ AWS Lambda
-- ✅ Amazon API Gateway
-- ✅ AWS Cognito
-- ✅ Amazon S3
-- ✅ Amazon CloudFront
-- ✅ AWS IAM
-
-## 📊 Performance & Scalability
-
-- **⚡ Fast Response Times**: CloudFront edge caching
-- **🔄 Auto-scaling**: Lambda scales with demand
-- **💰 Cost-effective**: Pay-per-use serverless model
-- **🌍 Global Reach**: CloudFront edge locations worldwide
-- **📈 High Availability**: Multi-AZ deployment
-
-## 🛡️ Security Best Practices
-
-- **Private S3 Bucket**: No public bucket policies
-- **Origin Access Identity**: Secure CloudFront-S3 connection
-- **JWT Authentication**: Secure API access tokens
-- **HTTPS Everywhere**: All traffic encrypted in transit
-- **IAM Least Privilege**: Minimal required permissions
-- **Input Validation**: Secure API request handling
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **AWS Bedrock** for providing Claude 3.5 Sonnet AI capabilities
-- **Pacific Northwest hiking community** for inspiration
-- **AWS CDK** for infrastructure as code
-- **React community** for the amazing frontend framework
-
-## 📞 Support
-
-For questions, issues, or feature requests:
-- 🐛 Open an issue on GitHub
-- 💬 Start a discussion in the repository
-- 📧 Contact the maintainers
-
----
-
-**Built with ❤️ for Pacific Northwest hikers** 🏔️
-
-*Explore safely, hike responsibly, and let AI be your guide to the beautiful trails of Washington and Oregon!*
